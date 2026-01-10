@@ -68,8 +68,9 @@
 
 /* banner section style */
 .hero {
-    width: 100%;
-    height: 100vh;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 700px;
     background-image: url("assets/hero-bg.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -123,44 +124,41 @@
     margin: 16px 265px;
     }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16;
-}
-
-.btn {
-    padding: 12px 16px;
+.common-btn{
+    background-color: #30B868;
+    color: white;
     border-radius: 4px;
-    font-size: 16px;
-    text-decoration: none;
-    transition: 0.3s ease;
+    padding: 12px 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.common-btn:hover{
+    background-color: tomato;
+}
+
+.common-btn-two{
+    background: none;
+    color: white;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-weight: 600;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.common-btn-two:hover{
+    background-color: #30B868;
+    border: none;
+}
+
+.btn-span{
+    margin: 0px 5px;
 }
 
 
-.btn.one {
-    background: #30B868;
-    color: #fff;
-}
 
-.btn.one:hover {
-    background: #2e8b57;
-}
-
-.btn.two {
-    border: 1px solid #fff;
-    color: #fff;
-    background-color: none;
-}
-
-
-.btn.two:hover {
-    background: #2e8b57;
-}
-
-
-/* Notes Section style */
+/* Notes Section style here */
 .notes {
     background: #FFFFFF;
     color: #fff;
@@ -255,183 +253,103 @@
 }
 
 
-/* Brain Section style */
-.second-brain{
-    margin: 120px;
-    background-color: #FFFFFF;
-    align-items: center;
-
-}
-.containerOne{
-    max-width: 1200px;
-    margin: auto;
+/* ----second brain section style here */
+.second-brain-section{
+    margin-top: 120px;
     display: flex;
     gap: 60px;
+    align-items: center;
 }
 
-.brain-image img {
-    width: 600px;
-    height: 600px;
-    border-radius: 12px;
-
-}
-
-.brain-content{
-    max-width: 700px;
-
-}
-
-.section-label{
-    color:#30B868 ;
-    font-size: 16px;
+.second-brain-section h5{
+    text-transform: uppercase;
+    color: #30B868;
     font-weight: 500;
-    margin-top: 102px;
-    text-align: left;
+    margin-bottom: 16px;
 }
-
-.brain-content h2 {
-    color:#001931;
-    font-style: Bold;
+.second-brain-section h3{
     font-size: 48px;
     font-weight: 700;
-    margin: 16px 0px;
-    text-align: left;
-
-.description{
-    font-size: 15px;
-    color: #555;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
+    color: #001931;
+}
+.second-brain-section p{
+    color: #627382;
+    margin-bottom: 40px;
 }
 
-.feature-list{
-    margin-top: 40px;
+.checklist{
     display: flex;
-    flex-direction: column;
-    gap: 16;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
 }
 
-.brain-content .feature-list li{
-    list-style: none;
-}
 
-.feature-list li::before {
-    position: absolute;
-    left: 0;
-    color: #3cb371;
-    font-weight: bold;
-}}
-
-
-Eearly
-.early-access-section{
-    margin: 120px;
-
-}
-
-.ea-container{
-    margin: 120px;
+/* think section style starts here */
+.think-section{
+    background-color: rgba(247, 246, 242, 1);
+    padding: 80px 40px;
+    border-radius: 12px;
     text-align: center;
-    max-width: 1200px;
-    background-color: #F7F6F2;
-    width: 1360px;
-height: 385px;
-align-items: center;
-padding: 80px 40px 80px 40px;
+    margin: 120px auto;
 }
-
-.ea-container h2{
-    color: rgba(0, 25, 49, 1);
-    font-style: Bold;
+.think-section p{
+    color: #627382;
+    margin: 16px 0px 24px 0px;
+}
+.think-section h3{
     font-size: 40px;
-    text-align: center; 
+    font-weight: 700;
+    color: #001931;
 }
 
-.ea-subtitle{
-    color: #627382,;
-font-style: Regular;
-font-size: 16px;
-font-weight: 400;
-margin-top: 16px;
-text-align: center;
-
+.access-div{
+    margin-top: 16px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    color: #627382;
+    border: 1px solid red;
 }
 
-.ea-btn{
-    padding: 12px 16px;
-    border-radius: 4px;
+
+/* --footer styles here */
+footer{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #001931;
+    padding: 120px 120px 30px 120px;
 }
 
-.ea-container button{
-    width: 194px;
-height: 52px;
-align-items: center;
-
-}
-
-.ea-btn{
-    border-radius: 4px;
-background: #30B868; 
-padding: 12px 16px 12px 16px;
-align-items: center;
-color: #FFFFFF;
-font-size: 16px;
-}
-
-.ea-end{
-    color:#627382,;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-align: center;
-}
-
-.footer-section {
-    background: #011b33;
-    color: white;
-
-}
-
-.footer-content {
+.footer-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    margin-bottom: 80px;
 }
 
-.footer-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.kv-logo {
-    width: 139px;
-    height: 60px;
-    margin-left: 120px;
-}
-
-
-
-.footer-right {
-    padding: 120px 227px 200px;
+.footer-content h5{
+    font-size: 20px;
     font-weight: 500;
+    color: white;
+    margin-bottom: 16px;
+}
+.footer-content a i{
+    color: white;
+    margin-right: 16px;
 }
 
-.social-icons {
-    display: flex;
-    gap: 18px;
-    color: #ffffff;
+hr{
+    color: #E5E7EB;
+    opacity: 0.2;
 }
 
-
-footer hr {
-    margin: 0.5px  30px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.footer-copy {
-    color: rgba(250, 250, 250, 1);
-    font-size: 16px;
-    font-weight: 400;
+.final-footer{
     text-align: center;
+    color: rgba(250, 250, 250, 1);
+}
+.final-footer p{
+    margin-top: 30px;
 }
